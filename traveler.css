@@ -1,288 +1,342 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Crimson Text', serif;
-    font-size: 16px;
-    font-weight: 300;
-    margin: 0;
+  font-family: "Crimson Text", serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 0;
 }
 /*Header Stuff Here*/
 header {
-    background-color: #fff;
-    padding: 1rem 2vw;
+  background-color: #fff;
+  padding: 1rem 2vw;
+  align-items: center;
 }
 header h1 {
-    margin: 0;
-    color: #5E5038;   
+  margin: 0;
+  color: #5e5038;
 }
 header p {
-    margin: 0;
-    color: teal;
-    letter-spacing: .5px;
+  margin: 0;
+  color: teal;
+  letter-spacing: 0.5px;
 }
 header {
-    padding: 1rem 2vw;
-    display: flex;
-    align-items: flex-end; 
+  padding: 1rem 2vw;
+  display: flex;
+  align-items: flex-end;
 }
-header div{
-    padding-left: 1vw;
+header div {
+  padding-left: 1vw;
 }
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 /*Nav Stuff Goes here*/
 /* Small Screen Only*/
 @media only screen and (max-width: 600px) {
-    nav ul {
-        margin: 0;
-        padding: 0 2vw;
-        list-style-type: none;
-    }
-    nav a {
-        display: block;
-        padding: .8rem;
-        text-decoration: none;
-        font-weight: 300;
-        text-transform: capitalize;
-        text-align: center;
-        border-bottom: solid 1px #aaa;
-        color: teal;
-    }
-    nav .active a{
-        background-color: teal;
-        background-image: linear-gradient(to bottom, teal, blue);
-        color: white;
-    }
+  nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+  }
+  nav a {
+    display: block;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: center;
+    border-bottom: solid 1px #aaa;
+    color: teal;
+  }
+  nav .active a {
+    background-color: teal;
+    background-image: linear-gradient(to bottom, teal, blue);
+    color: white;
+  }
 } /*end of the media query*/
 
 /* Big Screen Only*/
 @media only screen and (min-width: 601px) {
-    nav {
-        background-color: #fff;
-    }
-    nav ul {
-        list-style-type: none;
-        padding: 0 2vw;
-        margin: 0;
-        display: flex;
-    }
-    nav a {
-        display: block;
-        padding: 1.2rem 1rem .3rem 1rem;
-        font-size: 1rem;
-        text-decoration: none;
-        color: teal;
-        font-weight: 300;
-        text-transform: uppercase;
-        text-align: center;
-        border-bottom: solid 2px #fff;
-    }
+  nav {
+    background-color: #fff;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+  }
+  nav a {
+    display: block;
+    padding: 1.2rem 1rem 0.3rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: teal;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: solid 2px #fff;
+  }
 
-    nav li.active a {
-        color: black;
-        border-bottom: solid 2px #5E5038;
-    }
-    nav a:hover {
-        color: black;
-    }
+  nav li.active a {
+    color: black;
+    border-bottom: solid 2px #5e5038;
+  }
+  nav a:hover {
+    color: black;
+  }
 }
 /*Stuff for the main*/
+.description p {
+  color: black;
+}
+.normal-card {
+  margin-top: 15px;
+  border-radius: 15px;
+  padding: 0.5rem 2rem 2rem 2rem;
+  display: inline-flex;
+}
+.records-site {
+  background-color: rgb(195, 127, 243);
+}
+.vacation-site {
+  background-color: #41d8f7;
+}
+.arches {
+  background-color: #f7a04e;
+}
+.ist-Website {
+  background-color: #50e098;
+}
+.lockedIn {
+  background-color: #41d8f7;
+}
+.childearth {
+  background-color: rgb(247, 139, 139);
+}
+.feitelectric {
+    background-color: rgb(195, 127, 243);
+}
+.aolmail {
+    background-color: turquoise;
+}
+.myimage {
+    display: flex;
+    justify-content: flex-end;
+    padding:25px;
+    width: auto;
+    align-content: end;
+}
+div.my-cards .normal-card:hover{
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
+div.my-cards .normal-card {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
 main {
-    padding: 2vw;
+  padding: 2vw;
 }
 main h1 {
-    color: teal;
+  color: teal;
 }
 main h2 {
-    color: teal;
-    margin-bottom: .2rem;
+  color: white;
+  margin-bottom: 0.2rem;
+  text-align: center;
 }
 main h3 {
-    color: teal;
+  color: white;
 }
 main p {
-    color: #5E5038;
-    margin: 0 0 .3rem 0;
+  color: white;
+  margin: 0 0 0.3rem 0;
 }
 main a {
-    text-decoration: none;
+  text-decoration: none;
+  color: black;
 }
 main ol {
-    padding: .5rem 3vw;
-    background-color: #E5DDD0;
+  padding: 0.5rem 3vw;
+  background-color: #e5ddd0;
 }
 main dl dt {
-    color: #5E5038;
-    font-weight: 300;
+  color: #5e5038;
+  font-weight: 300;
 }
 main dl dd {
-    color: #5E5038;
-    font-size: .9rem;
+  color: #5e5038;
+  font-size: 0.9rem;
 }
 main ul {
-    list-style-type: circle;
+  list-style-type: circle;
 }
 main ul li {
-    line-height: 125%;
-    margin-bottom: .5rem;
-    font-size: .9rem;
-
+  line-height: 125%;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 main address {
-    font-style: normal;
-    background-color: #E5DDD0;
-    padding: .5rem;
-    width: 12.5rem;
-    border: 1px solid #024873;
-    border-radius: .5rem;
-}
-main a {
-    color: teal;
+  font-style: normal;
+  background-color: #e5ddd0;
+  padding: 0.5rem;
+  width: 12.5rem;
+  border: 1px solid #024873;
+  border-radius: 0.5rem;
 }
 main a:hover {
-    color: black;
+  color: black;
 }
-
 figure.wrapped {
-    width: 30%;
-    margin: 0 2% 0 ;
-    float: right;
-    margin-left: auto;
-    margin-right: auto;
-    
+  width: 10rem;
+  margin: 0 2% 0;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
 }
 figure.wrapped img {
-    height: auto;
-    max-width: 100%;
-    padding: 10px;
-    
+  height: 12rem;
+  vertical-align: bottom;
+  width: auto;
+  max-width: 12rem;
+  padding: none;
 }
 figure.wrapped figcaption {
-    text-align: center;
-    font-size: .75rem;
-    
+  text-align: center;
+  font-size: 1rem;
+  color: white;
 }
 
 div.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-div.gallery img{
-    display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
+div.gallery img {
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 div.gallery figure {
-    margin: 0.5rem 2% 0 0;
+  margin: 0.5rem 2% 0 0;
 }
 
 div.gallery figcaption {
-    text-align: center;
-    font-size: .8rem;
-    color: white;
-    padding: .3rem 0;
-    background-color: teal;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+  padding: 0.3rem 0;
+  background-color: teal;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-div.gallery figure:hover{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0px 0px 5px blue;
+div.gallery figure:hover {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 0px 5px blue;
 }
 
 .myForm fieldset {
-    border: 1px solid #E5DDD0;
-    border-radius: 3px;
-    margin-bottom: 1rem;    
-}
-.myForm legend {
-    color: black;
-    font-size: .8rem;
-    background-color: white;
-}
-.myForm label {
-    margin: .5rem;
-}
-.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea {
-    display: block;
-}
-.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea {
-    border: solid 1px #999;
-    padding: .3rem;
-    width: 300px;
-    border-radius: .3rem;
-    font-family: 'Crimson Text', serif;
-    font-size: 16px;
-}
-.myForm textarea {
-    height: 6rem;
-}
-.myForm :required {
-    background-color: rgba(30,40,145,.05);
-    
-}
-.myForm [type=submit] {
-    background-color: teal;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    color: white;
-    margin: 1rem 0 0 1vw;
-}
-.recordhero {
-    width: 100%;
-    margin: 0;
-}
-.recordhero img{
-    width: 100%;
-    height: auto;
-}
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-} 
-.gallery section {
-    flex-basis: 50%;
-    margin: 1rem 0;
-    
-}
-.gallery span {
-    display: block;
-    text-align: center; 
-    font-weight: 300;
-    color: #895772;
-}
-.gallery img {
-    width: auto;
-    height: 300;
-}
-.gallery img:hover{
-    box-shadow:0px 0px 10px rgba(0,0,0,.2);
+  border: 1px solid #e5ddd0;
+  border-radius: 3px;
+  margin-bottom: 1rem;
 }
 
+.myForm legend {
+  color: black;
+  font-size: 0.8rem;
+  background-color: white;
+}
+.myForm label {
+  margin: 0.5rem;
+}
+.myForm label,
+.myForm select,
+.myForm [type="text"],
+.myForm [type="tel"],
+.myForm textarea {
+  display: block;
+}
+.myForm [type="text"],
+.myForm [type="tel"],
+.myForm select,
+.myForm textarea {
+  border: solid 1px #999;
+  padding: 0.3rem;
+  width: 300px;
+  border-radius: 0.3rem;
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+}
+.myForm textarea {
+  height: 6rem;
+}
+.myForm :required {
+  background-color: rgba(30, 40, 145, 0.05);
+}
+.myForm [type="submit"] {
+  background-color: teal;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: white;
+  margin: 1rem 0 0 1vw;
+}
+.recordhero {
+  width: 100%;
+  margin: 0;
+}
+.recordhero img {
+  width: 100%;
+  height: auto;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery section {
+  flex-basis: 50%;
+  margin: 1rem 0;
+}
+.gallery span {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  color: #895772;
+}
 /*Footer Stuff Here*/
 footer {
-    background-color: teal;
-    text-align: center;
-    color: white;
-    padding: 1rem 0;
-    font-size: .8rem;
+  background-color: teal;
+  text-align: center;
+  color: white;
+  padding: 1rem 0;
+  font-size: 0.8rem;
 }
 footer a {
-    color: white;
+  color: white;
 }
-header, nav, main {
-    max-width: 64rem;
-    margin: 0 auto;
+header,
+nav,
+main {
+  max-width: 64rem;
+  margin: 0 auto;
 }
